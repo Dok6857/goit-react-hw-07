@@ -12,11 +12,6 @@ export const ContactList = () => {
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
-  // const dispatch = useDispatch();
-
-  // const handleDelete = id => {
-  //   dispatch(deleteContact(id));
-  // };
 
   return (
     <ul className={css.contactList}>
