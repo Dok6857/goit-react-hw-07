@@ -1,5 +1,4 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-// import { useId } from 'react';
 import * as Yup from 'yup';
 import css from './ContactForm.module.css';
 import { nanoid } from 'nanoid';
@@ -17,8 +16,6 @@ export const ContactForm = () => {
       .max(9, 'Please try again (example: 111-22-33)')
       .required('Required'),
   });
-  // const nameFieldID = useId();
-  // const numberFieldID = useId();
 
   const dispatch = useDispatch();
 
