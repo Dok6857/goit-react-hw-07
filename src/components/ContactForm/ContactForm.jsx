@@ -13,8 +13,8 @@ export const ContactForm = () => {
       .max(50, 'Too Long!')
       .required('Required'),
     number: Yup.string()
-      .min(9, 'Please try again (example: 111-22-33)')
-      .max(9, 'Please try again (example: 111-22-33)')
+      .min(9, 'Please try again (example: 111-222-3333)')
+      .max(12, 'Please try again (example: 111-222-3333)')
       .required('Required'),
   });
 
